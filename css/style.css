@@ -1,5 +1,9 @@
 #container {
   display: grid;
+  grid-template-rows: 1fr 11fr;
+  grid-template-areas:
+    "sidebar"
+    "content";
   height: 100vh;
   font-family: 'Lato', sans-serif;
   color: rgba(0, 0, 0, 0.82);
@@ -25,6 +29,7 @@ aside {
   background-color: #2196f3;
   font-size: 1.2em;
   color: #0069c0;
+  grid-area: sidebar;
 }
 
 aside img {
@@ -34,6 +39,7 @@ aside img {
 article {
   background-color: #f3f3f3;
   line-height: 1.6em;
+  grid-area: content;
 }
 
 .menu-item{
@@ -83,6 +89,7 @@ article {
 
   #container{
     grid-template-columns: 3fr 7fr;
+    grid-template-rows: 12fr;
     grid-template-areas:
       "sidebar content";
   }
