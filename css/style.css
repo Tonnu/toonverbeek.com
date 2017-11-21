@@ -38,6 +38,11 @@ article {
   grid-area: content;
 }
 
+article #intro {
+  font-size: 1.4em;
+  line-height: 1.8em;
+}
+
 .menu-item{
   color: white;
   display: inline-block;
