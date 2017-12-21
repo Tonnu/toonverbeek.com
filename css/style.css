@@ -1,12 +1,30 @@
-#container {
-  display: grid;
-  grid-template-rows: 1fr 15.6fr;
-  grid-template-areas:
-    "sidebar"
-    "content";
+body {
+  height: 100vh;
   font-family: 'Lato', sans-serif;
-  color: rgba(0, 0, 0, 0.82);
+
 }
+
+#container {
+  height: 100%;
+}
+
+@media screen and (max-width: 735px){
+  #container {
+    display: grid;
+    grid-template-rows: 1fr 10fr;
+    grid-template-areas:
+      "sidebar"
+      "content";
+    color: rgba(0, 0, 0, 0.82);
+  }
+}
+
+@media screen and (min-width: 736px) and (max-width: 1100px) {
+  article {
+    height: 100%;
+  }
+}
+
 
 h1 {
   font-size: 2em;
@@ -122,16 +140,19 @@ article #intro {
 
 
 @media screen and (min-width: 1100px) {
+
   .tooltip {
     border-bottom: 0.1em dotted black;
   }
 
   #container{
-    grid-template-columns: 3fr 1fr 7fr 1fr;
-    grid-template-rows: 12fr;
+    display: grid;
+    font-family: 'Lato', sans-serif;
+    color: rgba(0, 0, 0, 0.82);
+    grid-template-columns: 3fr 9fr;
     background-color: #f3f3f3;
     grid-template-areas:
-      "sidebar - content";
+      "sidebar content";
   }
 
   h1 {
@@ -151,6 +172,8 @@ article #intro {
 
   article {
     grid-area: content;
+    width: 60%;
+    margin: 0 auto 0 auto;
   }
 
   aside {
