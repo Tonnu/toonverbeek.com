@@ -1,7 +1,7 @@
 body {
   height: 100vh;
   font-family: 'Lato', sans-serif;
-
+  background: #f3f3f3;
 }
 
 #container {
@@ -172,7 +172,7 @@ article #intro {
 
   article {
     grid-area: content;
-    width: 60%;
+    width: 70%;
     margin: 0 auto 0 auto;
   }
 
