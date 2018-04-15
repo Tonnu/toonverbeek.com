@@ -1,6 +1,6 @@
 body {
   height: 100vh;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   background: #f3f3f3;
 }
 
@@ -8,7 +8,7 @@ body {
   height: 100%;
 }
 
-@media screen and (max-width: 735px){
+@media screen and (max-width: 735px) {
   #container {
     display: grid;
     grid-template-rows: 1fr 10fr;
@@ -25,7 +25,6 @@ body {
   }
 }
 
-
 h1 {
   font-size: 2em;
 }
@@ -34,7 +33,7 @@ h2 {
   margin: 40px 0 0 0;
 }
 
-#container > *{
+#container > * {
   padding: 1em;
 }
 
@@ -46,7 +45,7 @@ aside {
 }
 
 aside img {
-  display:none;
+  display: none;
 }
 
 article {
@@ -60,41 +59,37 @@ article #intro {
   line-height: 1.8em;
 }
 
-.menu-item{
+.menu-item {
   color: white;
   display: inline-block;
   padding-left: 10px;
-  float:right;
+  float: right;
 }
 
 .menu-item:hover {
-  color:rgba(0,0,0,0.7);
+  color: rgba(0, 0, 0, 0.7);
 }
 
 #menu-top {
-  color:white;
+  color: white;
   float: left;
 }
 
 #menu-bottom {
-  float:right;
+  float: right;
   display: block;
 }
 
 #reachout {
-    background-color: #66bb6a;
-    box-shadow: 0 3px 3px rgba(0,0,0,0.16), 0 3px 3px rgba(0,0,0,0.23);
-
-    border-radius: 5px;
-    color: white;
-    padding: 12px;
-    font-size: 1.1em;
-    cursor: pointer;
-    width: 80px;
-}
-
-#reachout a {
+  background-color: #66bb6a;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.16), 0 3px 3px rgba(0, 0, 0, 0.23);
+  display: block;
+  border-radius: 5px;
   color: white;
+  padding: 12px;
+  font-size: 1.1em;
+  cursor: pointer;
+  width: 80px;
   text-decoration: none;
 }
 
@@ -103,56 +98,54 @@ article #intro {
 }
 
 .tooltip {
-    position: relative;
-    display: inline-block;
-    border-bottom: 1px dotted black;
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
 }
 
 .tooltip .tooltiptext {
-    visibility: hidden;
-    width: 120px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: 150%;
-    left: 50%;
-    margin-left: -60px;
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -60px;
 }
 
 .tooltip .tooltiptext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: black transparent transparent transparent;
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
 }
 
 .tooltip:hover .tooltiptext {
-    visibility: visible;
+  padding: 0.5rem;
+  visibility: visible;
 }
 
-
 @media screen and (min-width: 1100px) {
-
   .tooltip {
     border-bottom: 0.1em dotted black;
   }
 
-  #container{
+  #container {
     display: grid;
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
     color: rgba(0, 0, 0, 0.82);
     grid-template-columns: 3fr 9fr;
     background-color: #f3f3f3;
-    grid-template-areas:
-      "sidebar content";
+    grid-template-areas: "sidebar content";
   }
 
   h1 {
@@ -166,7 +159,7 @@ article #intro {
   }
 
   #menu-bottom {
-    width:100%;
+    width: 100%;
     text-align: center;
   }
 
@@ -184,7 +177,7 @@ article #intro {
   aside img {
     margin: 20% auto 3% auto;
     max-width: 150px;
-    display:block;
+    display: block;
   }
 
   #menu-header {
@@ -196,6 +189,6 @@ article #intro {
     display: block;
     padding-bottom: 20px;
     padding-left: 0px;
-    float:none;
+    float: none;
   }
 }
