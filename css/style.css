@@ -143,7 +143,7 @@ article #intro {
     display: grid;
     font-family: "Lato", sans-serif;
     color: rgba(0, 0, 0, 0.82);
-    grid-template-columns: 3fr 9fr;
+    grid-template-columns: 4fr 9fr;
     background-color: #f3f3f3;
     grid-template-areas: "sidebar content";
   }
@@ -165,7 +165,7 @@ article #intro {
 
   article {
     grid-area: content;
-    width: 70%;
+    width: 50%;
     margin: 0 auto 0 auto;
   }
 
