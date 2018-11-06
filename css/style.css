@@ -38,7 +38,7 @@ h2 {
 }
 
 aside {
-  background-color: #2196f3;
+  background-color: #6f6f6f;
   font-size: 0.9em;
   color: #0069c0;
   grid-area: sidebar;
@@ -134,6 +134,15 @@ article #intro {
   visibility: visible;
 }
 
+.projects {
+  display: block;
+  color: inherit;
+}
+
+.project-item {
+  font-size: large;
+  padding: 0;
+}
 @media screen and (min-width: 1100px) {
   .tooltip {
     border-bottom: 0.1em dotted black;
@@ -143,7 +152,7 @@ article #intro {
     display: grid;
     font-family: "Lato", sans-serif;
     color: rgba(0, 0, 0, 0.82);
-    grid-template-columns: 4fr 9fr;
+    grid-template-columns: 3fr 9fr;
     background-color: #f3f3f3;
     grid-template-areas: "sidebar content";
   }
