@@ -2,12 +2,54 @@ body {
   /* background: linear-gradient(180deg, white, #e7eef7); */
   background: #fefefe;
   color: #2d3748;
+  margin: 0;
   font-family: "Source Sans Pro", sans-serif;
 }
 
 .container {
   width: 90%;
   margin: auto;
+}
+
+.card-container {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #cbd5e0;
+}
+
+.card-about-me {
+  display: flex;
+  background: white;
+  border-radius: 4px;
+  padding: 10px;
+  flex-direction: column;
+  text-align: center;
+  margin: auto;
+  width: 90%;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.card-about-me .header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-about-me h3 {
+  margin: 0.3rem;
+}
+
+.card-img-profile {
+  background-image: url("../headshot_toon.png");
+  width: 75px;
+  height: 75px;
+  border-radius: 100px;
+  background-size: cover;
+  display: inline-block;
+  margin-right: 1rem;
 }
 
 .container h1 {
