@@ -16,40 +16,48 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: #cbd5e0;
+  background: linear-gradient(to bottom, #ccdefb, white);
 }
 
 .card-about-me {
   display: flex;
+  flex-direction: column;
   background: white;
   border-radius: 4px;
-  padding: 10px;
-  flex-direction: column;
-  text-align: center;
+  padding: 20px;
+  text-align: left;
   margin: auto;
   width: 90%;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
     0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
-.card-about-me .header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.bio {
+  flex-grow: 1;
 }
 
-.card-about-me h3 {
+.bio h1 {
+  margin: 0;
+}
+.bio h3 {
   margin: 0.3rem;
+  color: #718096;
+
+  font-weight: 300;
+}
+
+.img-wrapper {
+  margin: auto;
 }
 
 .card-img-profile {
   background-image: url("../headshot_toon.png");
-  width: 75px;
-  height: 75px;
-  border-radius: 100px;
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
   background-size: cover;
   display: inline-block;
-  margin-right: 1rem;
+  margin-bottom: 1rem;
 }
 
 .container h1 {
@@ -174,6 +182,16 @@ body {
   .img-profile {
     width: 120px;
     height: 120px;
+  }
+
+  .card-about-me {
+    flex-direction: row;
+    max-width: 500px;
+  }
+
+  .card-img-profile {
+    margin: auto;
+    margin-right: 1rem;
   }
 
   .projects {
