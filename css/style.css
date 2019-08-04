@@ -1,6 +1,8 @@
 body {
-  background: #e2e8f0;
+  /* background: linear-gradient(180deg, white, #e7eef7); */
+  background: #fefefe;
   color: #2d3748;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 .container {
@@ -9,39 +11,65 @@ body {
 }
 
 .container h1 {
+  font-size: 40px;
   text-align: center;
+  color: #294067;
 }
 
 .container h2 {
-  border-bottom: 1px solid #2d3748;
+  border-bottom: 1px solid #294067;
+  color: #294067;
+  font-weight: 600;
 }
 
 .img-profile {
-  background-image: url("../profile-2.jpg");
+  background-image: url("../headshot_toon.png");
   background-size: cover;
   width: 6rem;
   height: 6rem;
-  border-radius: 100px;
+  border: 1px solid #d1e0f3;
+  border-radius: 10px;
   margin: auto;
 }
 
 .card-project {
   display: flex;
   flex-direction: column;
-  justify-items: stretch;
+  top: 0;
   height: 400px;
+  max-width: 350px;
+  margin: auto;
   border-radius: 4px;
   margin-bottom: 1rem;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
     0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+  transition: all 0.1s ease 0s;
   background: white;
+  border: 1px solid rgb(248, 245, 245);
+}
+
+.card-project:hover {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  position: relative;
+  top: -5px;
+  /* background: rgba(220, 255, 237, 0.73); */
 }
 
 .card-header {
   height: 35%;
-  background: #fc8181;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: grayscale(70%);
+  z-index: 1;
+}
+
+.card-content h3 {
+  text-decoration: underline;
+  font-weight: 600;
 }
 
 .card-content {
@@ -49,15 +77,61 @@ body {
   padding: 1rem;
 }
 
+.project-description {
+  color: #4a5568;
+  font-weight: 300;
+}
+
 .card-footer {
   min-height: 3rem;
-  background: #2c7a7b;
+  /* background: #2c7a7b; */
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
 }
 
 .snj > .card-header {
   background-image: url("../supernicejobs.png");
-  background-size: cover;
-  background-color: none;
+}
+
+.askplato > .card-header {
+  background-image: url("../askplato.png");
+}
+
+.recipeboard > .card-header {
+  background-image: url("../recipeboard.png");
+}
+
+@media screen and (min-width: 760px) {
+  .card-content h3 {
+    text-decoration: none;
+  }
+  .img-profile {
+    width: 120px;
+    height: 120px;
+  }
+
+  .projects {
+    margin-top: 1rem;
+  }
+
+  .container {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 760px;
+  }
+
+  .projects {
+    display: flex;
+    width: 1024px;
+    position: relative;
+    left: -100px;
+  }
+  .card-project {
+    width: 300px;
+    margin: auto;
+  }
 }

@@ -15,7 +15,7 @@
     <!-- Recommended favicon format -->
     <link href="./favicon.png" rel="icon" type="image/png" />
     <link
-      href="https://fonts.googleapis.com/css?family=Lato"
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,900&display=swap"
       rel="stylesheet prefetch"
     />
     <link href="css/style.css" rel="stylesheet" />
@@ -38,8 +38,10 @@
 
   <body>
     <div class="container">
-      <div class="img-profile"></div>
-      <h1>👋 Hi, I'm Toon.</h1>
+      <div class="container-header">
+        <div class="img-profile"></div>
+        <h1>Hi, I'm Toon. 👋</h1>
+      </div>
       <p>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia quo
         ullam quam omnis. Ipsa, ducimus, fugit deserunt eum, minus in accusamus
@@ -67,20 +69,53 @@
 
       <h2>Projects</h2>
       <div class="projects">
-        <div class="card-project ">
-          <div class="card-header">Recipeboard</div>
-          <div class="card-content"><h3>Recipeboard</h3></div>
-          <div class="card-footer">footer</div>
-        </div>
-        <div class="card-project">
-          <div class="card-header">Header</div>
-          <div class="card-content"><h3>Plato</h3></div>
-          <div class="card-footer">footer</div>
-        </div>
-        <div class="card-project snj">
+        <div
+          onclick="window.open(`https://recipeboard.co`, `_`)"
+          class="card-project recipeboard"
+        >
           <div class="card-header"></div>
-          <div class="card-content"><h3>Super nice jobs</h3></div>
-          <div class="card-footer">footer</div>
+          <div class="card-content">
+            <h3>Recipeboard</h3>
+            <p class="project-description">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi
+              nesciunt expedita perferendis eius similique velit error voluptate
+              dolor? Odit excepturi delectus quis, culpa deleniti cum nulla
+              numquam eligendi. A, illo.
+            </p>
+          </div>
+          <div class="card-footer"></div>
+        </div>
+        <div
+          onclick="window.open(`https://askplato.co`, `_`)"
+          class="card-project askplato"
+        >
+          <div class="card-header"></div>
+          <div class="card-content">
+            <h3>Plato</h3>
+            <p class="project-description">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi
+              nesciunt expedita perferendis eius similique velit error voluptate
+              dolor? Odit excepturi delectus quis, culpa deleniti cum nulla
+              numquam eligendi. A, illo.
+            </p>
+          </div>
+          <div class="card-footer"></div>
+        </div>
+        <div
+          onclick="window.open(`https://supernicejobs.com`, `_`)"
+          class="card-project snj"
+        >
+          <div class="card-header"></div>
+          <div class="card-content">
+            <h3>Super nice jobs</h3>
+            <p class="project-description">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi
+              nesciunt expedita perferendis eius similique velit error voluptate
+              dolor? Odit excepturi delectus quis, culpa deleniti cum nulla
+              numquam eligendi. A, illo.
+            </p>
+          </div>
+          <div class="card-footer"></div>
         </div>
       </div>
     </div>
