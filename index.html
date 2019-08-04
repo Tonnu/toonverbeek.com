@@ -20,6 +20,33 @@
     />
     <link href="css/style.css" rel="stylesheet" />
 
+    <script defer>
+      document.addEventListener(
+        "DOMContentLoaded",
+        () => {
+          const callback = function(entries) {
+            entries.forEach(entry => {
+              if (entry.intersectionRatio > 0.9) {
+                entry.target.classList.toggle("is-visible");
+                observer.unobserve(entry.target);
+              }
+            });
+          };
+
+          const observer = new IntersectionObserver(callback, {
+            root: null,
+            rootMargin: "0px",
+            threshold: 1
+          });
+
+          const targets = document.querySelectorAll(".card-project");
+          targets.forEach(function(target) {
+            observer.observe(target);
+          });
+        },
+        false
+      );
+    </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
       async
